@@ -1,5 +1,6 @@
 <!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script type="text/javascript" src="https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/J0209.js"></script> 		<script type="text/javascript" src="../reading/functions.js"></script> 		<link rel="stylesheet" href="../reading/layout.css"> 		<script> 			const d10 = [ ["a"], ["b"], 							]; 		</script> 	</head> 	<body onload='f1();' onkeydown='f4()' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> 			</div> 			<div id = "navigationBox"> 			</div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>두 숫자를 입력받아 사칙연산을 수행하고 예외가 발생하면 이를 처리하는 문제입니다 이를 해결하는 다음 프로그램의 실행상태를 확인하세요 </pre> 				<pre class='selectable'>사칙연산을 위한 첫번째 숫자를 입력하세요: <b><font color='red'>a</font></b>
 숫자 형식 불일치
+예외 실습 완료
 </pre><br> 	   				<h4>프로그램 코드</h4> 				<pre>	import java.util.*;
 	
 	public class NumberException
@@ -54,6 +55,9 @@
 <pre style='margin:0;padding:0;'>14			catch ( NumberFormatException e )				</pre><br>
 <pre style='margin:0;padding:0;'>15				System.out.println("숫자 형식 불일치");</pre>
 <pre style='background-color:black; color:white; width:807px; margin:0; padding:0;'>숫자 형식 불일치<br></pre><br>
+<pre style='margin:0;padding:0;'>20			finally 										</pre><br>
+<pre style='margin:0;padding:0;'>21				System.out.println( "예외 실습 완료" );</pre>
+<pre style='background-color:black; color:white; width:807px; margin:0; padding:0;'>예외 실습 완료<br></pre><br>
 <h4>E002(2와 b입력) 1 2 3 6 5 4와 22 사이의 실행순서(7개) 및 실행상태</h4>
 <pre style='margin:0;padding:0;'>7				System.out.print( "사칙연산을 위한 두번째 숫자를 입력하세요: " );</pre>
 <pre style='background-color:black; color:white; width:807px; margin:0; padding:0;'>사칙연산을 위한 두번째 숫자를 입력하세요: </pre><br>
@@ -63,6 +67,9 @@
 <pre style='margin:0;padding:0;'>16			catch ( InputMismatchException e ) 				</pre><br>
 <pre style='margin:0;padding:0;'>17		 		System.out.println( "입력 자료형 불일치" );</pre>
 <pre style='background-color:black; color:white; width:807px; margin:0; padding:0;'>입력 자료형 불일치<br></pre><br>
+<pre style='margin:0;padding:0;'>20			finally 										</pre><br>
+<pre style='margin:0;padding:0;'>21				System.out.println( "예외 실습 완료" );</pre>
+<pre style='background-color:black; color:white; width:807px; margin:0; padding:0;'>예외 실습 완료<br></pre><br>
 <h4>E003(2와 0입력) 1 2 3 6 5 4 7 9 8 10 11과 22 사이의 실행순서(8개) 및 실행상태</h4>
 <pre style='margin:0;padding:0;'>12				System.out.println( num1 + " * " + num2 + " = " + ( num1 * num2 ) );</pre>
 <pre style='background-color:black; color:white; width:807px; margin:0; padding:0;'>2 * 0 = 0<br></pre><br>
@@ -72,4 +79,7 @@
 <pre style='margin:0;padding:0;'>18			catch ( ArithmeticException e ) 				</pre><br>
 <pre style='margin:0;padding:0;'>19				System.out.println( "산술 연산 오류" );</pre>
 <pre style='background-color:black; color:white; width:807px; margin:0; padding:0;'>산술 연산 오류<br></pre><br>
+<pre style='margin:0;padding:0;'>20			finally 										</pre><br>
+<pre style='margin:0;padding:0;'>21				System.out.println( "예외 실습 완료" );</pre>
+<pre style='background-color:black; color:white; width:807px; margin:0; padding:0;'>예외 실습 완료<br></pre><br>
 <table border='1'></table> 			</div> 		</div> 	</body> </html> 
