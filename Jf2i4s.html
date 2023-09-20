@@ -1,0 +1,42 @@
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script type="text/javascript" src="https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/J0204.js"></script> 		<script type="text/javascript" src="../reading/functions.js"></script> 		<link rel="stylesheet" href="../reading/layout.css"> 		<script> 			var d10 = "1 2 3 4 5 6 8 9 11 10 9 11 10 9 12 13 15 14 13 16 7 6 8 9 11 10 9 12 13 15 14 13 15 14 13 15 14 13 16 7 6 8 9 12 13 15 14 13 15 14 13 15 14 13 15 14 13 15 14 13 16 7 6 17"; 		</script> 	</head> 	<body onload='f1();' onkeydown='f4()' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> 			</div> 			<div id = "navigationBox"> 			</div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>크기를 입력받고 그 크기에 맞는 삼각형을 출력하는 문제입니다 실행순서를 클릭하세요 </pre> 				<pre class='selectable'>삼각형 크기를 입력하세요 : <b><font color='red'>3</font></b>
+  *
+ ***
+*****
+</pre><br>  	 				<h4>프로그램 코드</h4> 				<pre></pre><pre id="code0" class="unselectable codeClass">	import java.lang.System;
+</pre><pre id="code0" class="unselectable codeClass">	import java.util.Scanner;
+
+</pre><pre id="code0" class="unselectable codeClass">	public class Triangle
+</pre><pre id="code0" class="unselectable codeClass">	{
+</pre><pre id="code1" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('1')">1		public static void main( String[] args ) 
+</pre><pre id="code0" class="unselectable codeClass">		{
+</pre><pre id="code0" class="unselectable codeClass">			Scanner scan = new Scanner( System.in );
+</pre><pre id="code2" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('2')">2			int size=0;
+
+</pre><pre id="code3" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('3')">3			System.out.print("삼각형 크기를 입력하세요 : ");
+</pre><pre id="code4" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('4')">4			size=scan.nextInt(); 
+
+</pre><pre id="code5" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('5')">5			for ( int line = 1;
+</pre><pre id="code6" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('6')">6					line <= size;							
+</pre><pre id="code7" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('7')">7						      line++ )						
+</pre><pre id="code0" class="unselectable codeClass">			{
+</pre><pre id="code8" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('8')">8				for ( int blank = size - line;						
+</pre><pre id="code9" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('9')">9						      blank > 0;
+</pre><pre id="code10" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('10')">10							         blank-- )			
+</pre><pre id="code0" class="unselectable codeClass">				{
+</pre><pre id="code11" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('11')">11					System.out.print(" ");
+</pre><pre id="code0" class="unselectable codeClass">				}
+</pre><pre id="code12" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('12')">12				for ( int star = 2*line-1;						
+</pre><pre id="code13" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('13')">13						      star > 0;
+</pre><pre id="code14" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('14')">14								star-- )			
+</pre><pre id="code0" class="unselectable codeClass">				{
+</pre><pre id="code15" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('15')">15					System.out.print("*");
+</pre><pre id="code0" class="unselectable codeClass">				}
+
+</pre><pre id="code16" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('16')">16				System.out.print("\n");
+</pre><pre id="code0" class="unselectable codeClass">			}
+
+</pre><pre id="code17" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('17')">17			return;
+</pre><pre id="code0" class="unselectable codeClass">		}	
+</pre><pre id="code0" class="unselectable codeClass">	}
+</pre>
+</pre> 			</div> 			<div id = "floatingBox"> 				<b>실행 순서</b> 				<pre id = "d4" style='white-space:normal; word-wrap:break-word; width:150px;'></pre> 			</div> 		</div> 	</body> </html>   

@@ -1,0 +1,45 @@
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script type="text/javascript" src="https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/J0205.js"></script> 		<script type="text/javascript" src="../reading/functions.js"></script> 		<link rel="stylesheet" href="../reading/layout.css"> 		<script> 			var d10 = "1 2 3 4 3 4 3 4 3 5 6 7 8 9 10 6 7 8 9 10 6 5 6 7 8 9 10 6 5 6 5 11 12 11 12 11 12 11 13"; 		</script> 	</head> 	<body onload='f1();' onkeydown='f4()' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> 			</div> 			<div id = "navigationBox"> 			</div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>사용자가 점수들을 입력하면 그 점수들을 정렬하는 문제입니다 실행순서를 클릭하세요 </pre> 				<pre class='selectable'>0점 ~ 100점 사이의 점수를 입력하세요: <b><font color='red'>90</font></b>
+0점 ~ 100점 사이의 점수를 입력하세요: <b><font color='red'>89</font></b>
+0점 ~ 100점 사이의 점수를 입력하세요: <b><font color='red'>86</font></b>
+0점 ~ 100점 사이의 점수를 입력하세요: <b><font color='red'>83</font></b>
+0점 ~ 100점 사이의 점수를 입력하세요: <b><font color='red'>80</font></b>
+1) 80 2) 83 3) 86 4) 89 5) 90
+</pre><br>  	 				<h4>프로그램 코드</h4> 				<pre></pre><pre id="code0" class="unselectable codeClass">	import java.lang.System;
+</pre><pre id="code0" class="unselectable codeClass">	import java.util.Scanner;
+
+</pre><pre id="code0" class="unselectable codeClass">	public class ScoreSort
+</pre><pre id="code0" class="unselectable codeClass">	{
+</pre><pre id="code1" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('1')">1		public static void main( String[] args ) 
+</pre><pre id="code0" class="unselectable codeClass">		{
+</pre><pre id="code0" class="unselectable codeClass">			Scanner scan = new Scanner( System.in );
+</pre><pre id="code2" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('2')">2			int[] score = new int[ 3 ];
+</pre><pre id="code0" class="unselectable codeClass">		
+</pre><pre id="code3" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('3')">3			for( int index = 0; index < score.length; index ++ )							
+</pre><pre id="code0" class="unselectable codeClass">			{
+</pre><pre id="code0" class="unselectable codeClass">				System.out.print( "0점 ~ 100점 사이의 점수를 입력하세요: " );
+</pre><pre id="code4" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('4')">4				score[ index ] = scan.nextInt(); 
+</pre><pre id="code0" class="unselectable codeClass">			} 
+
+</pre><pre id="code5" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('5')">5			for ( int max = score.length - 1; max >= 0; max-- )				
+</pre><pre id="code0" class="unselectable codeClass">			{
+</pre><pre id="code6" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('6')">6				for ( int index = 0; index < max; index++ )				
+</pre><pre id="code0" class="unselectable codeClass">				{
+</pre><pre id="code7" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('7')">7					if ( score[ index ] > score[ index + 1 ] )
+</pre><pre id="code0" class="unselectable codeClass">					{
+</pre><pre id="code8" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('8')">8						int temp = score[ index ];
+</pre><pre id="code9" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('9')">9						score[ index ] = score[ index + 1 ];							
+</pre><pre id="code10" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('10')">10						score[ index + 1 ] = temp;								
+</pre><pre id="code0" class="unselectable codeClass">					}
+</pre><pre id="code0" class="unselectable codeClass">				}	
+</pre><pre id="code0" class="unselectable codeClass">			}
+
+</pre><pre id="code11" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('11')">11			for ( int index = 0; index < score.length; index++ )							
+</pre><pre id="code0" class="unselectable codeClass">			{
+</pre><pre id="code12" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('12')">12				System.out.println( ( index + 1 ) + ") " + score[ index ] + " " );
+</pre><pre id="code0" class="unselectable codeClass">			} 
+
+</pre><pre id="code13" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('13')">13			return;
+</pre><pre id="code0" class="unselectable codeClass">		}
+</pre><pre id="code0" class="unselectable codeClass">	}
+</pre>
+</pre> 			</div> 			<div id = "floatingBox"> 				<b>실행 순서</b> 				<pre id = "d4" style='white-space:normal; word-wrap:break-word; width:150px;'></pre> 			</div> 		</div> 	</body> </html>   

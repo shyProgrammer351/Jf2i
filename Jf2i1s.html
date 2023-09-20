@@ -1,0 +1,34 @@
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script type="text/javascript" src="https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/J0201.js"></script> 		<script type="text/javascript" src="../reading/functions.js"></script> 		<link rel="stylesheet" href="../reading/layout.css"> 		<script> 			var d10 = "1 2 3 4 5 6 7 8 6 7 8 6 9 10"; 		</script> 	</head> 	<body onload='f1();' onkeydown='f4()' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> 			</div> 			<div id = "navigationBox"> 			</div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>5층에서 엘리베이터에 탑승 후, 엘리베이터에서 내릴 층수를 입력받아 메시지를 출력하는 문제입니다 실행순서를 클릭하세요 </pre> 				<pre class='selectable'>1층~5층 중 몇 층으로 올라가시나요 : <b><font color='red'>2</font></b>
+2층으로 올라갑니다. 문이 닫힙니다.
+1↑
+2↑
+딩~동~댕~동~~ ♪~♬~♩~~ 2층입니다. 문이 열립니다
+</pre><br>  	 				<h4>프로그램 코드</h4> 				<pre></pre><pre id="code0" class="unselectable codeClass">	import java.lang.System;
+</pre><pre id="code0" class="unselectable codeClass">	import java.util.Scanner;
+
+</pre><pre id="code0" class="unselectable codeClass">	public class Elevator 
+</pre><pre id="code0" class="unselectable codeClass">	{
+</pre><pre id="code1" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('1')">1		public static void main( String[] args ) 
+</pre><pre id="code0" class="unselectable codeClass">		{
+</pre><pre id="code0" class="unselectable codeClass">			Scanner scan = new Scanner( System.in );
+</pre><pre id="code0" class="unselectable codeClass">			int currentFloor = 1;									
+</pre><pre id="code2" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('2')">2			int destinationFloor= 0;
+
+</pre><pre id="code3" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('3')">3			System.out.print( "1층~5층 중 몇 층으로 올라가시나요 : " );
+</pre><pre id="code4" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('4')">4			destinationFloor= scan.nextInt(); 
+
+</pre><pre id="code5" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('5')">5			System.out.println( destinationFloor+ "층으로 올라갑니다. 문이 닫힙니다." );
+
+</pre><pre id="code6" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('6')">6			while( currentFloor <= destinationFloor )						
+</pre><pre id="code0" class="unselectable codeClass">			{
+</pre><pre id="code7" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('7')">7				System.out.println( currentFloor + "↑" );
+</pre><pre id="code8" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('8')">8				currentFloor++;								
+</pre><pre id="code0" class="unselectable codeClass">			}
+
+</pre><pre id="code9" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('9')">9			System.out.println( "딩~동~댕~동~~ ♪~♬~♩~~ " + destinationFloor+ "층입니다. 문이 열립니다" );
+
+</pre><pre id="code10" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('10')">10			return;
+</pre><pre id="code0" class="unselectable codeClass">		}
+</pre><pre id="code0" class="unselectable codeClass">	}
+</pre>
+</pre> 			</div> 			<div id = "floatingBox"> 				<b>실행 순서</b> 				<pre id = "d4" style='white-space:normal; word-wrap:break-word; width:150px;'></pre> 			</div> 		</div> 	</body> </html>   
