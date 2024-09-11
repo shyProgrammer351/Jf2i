@@ -1,53 +1,36 @@
-<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script type="text/javascript" src="../functions.js"></script> 		<script> 			const d10 = [ [ "for" ], [ "++" ], [ "for" ], [ "--" ], [ "for" ], [ "++" ], [ "scores[ index ] = scores[ index + 1 ]" ], [ "scores[ index + 1 ] = temp" ], [ "for" ], [ "++" ], 							]; 		</script> 	</head> 	<body oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> JAVA 프로그래밍 </div> 			<div id = "navigationBox"><ol><li><a href='../Jf1i/Jf1i1.html'>입출력/선택문</a></li><li><a href='../Jf2i/Jf2i1.html'>반복문/배열/예외</a></li><ul><li><a href='../Jf2i/Jf2i1.html'>엘리베이터</a></li><li><a href='../Jf2i/Jf2i2.html'>합계 Σ 계산</a></li><li><a href='../Jf2i/Jf2i3.html'>달력</a></li><li><a href='../Jf2i/Jf2i4.html'>삼각형 출력</a></li><li><a href='../Jf2i/Jf2i5.html'>점수 정렬</a></li><ul><li><a href='Jf2i5.html'>코드읽기</a></li><li><a href='Jf2i5a.html'>알고리즘</a></li><li><a href='Jf2i5k.html'>키워드</a></li><li><a href='Jf2i5b.html'>빈칸채우기</a></li><li><a href='Jf2i5s.html'>실행순서</a></li><li><a href='Jf2i5m.html'>실행상태</a></li><li><a href='https://github.com/CodeReading101/JAVA/blob/main/Chapter02/scoresort.java' target='_blank'>소스코드</a></li></ul><li><a href='../Jf2i/Jf2i6.html'>단어 정렬</a></li><li><a href='../Jf2i/Jf2i7.html'>KTX 기차 좌석</a></li><li><a href='../Jf2i/Jf2i8.html'>챗봇</a></li><li><a href='../Jf2i/Jf2i9.html'>숫자 예외</a></li><li><a href='../Jf2j/Jf2j0.html'>참조 예외</a></li></ul><li><a href='../Jf3i/Jf3i1.html'>클래스와 객체/패키지</a></li><li><a href='../Jf4i/Jf4i1.html'>상속 및 다형성</a></li><li><a href='../Jf5i/Jf5i1.html'>GUI 기초</a></li><li><a href='../Jf6i/Jf6i1.html'>GUI 응용</a></li><li><a href='../Jf7i/Jf7i1.html'>제네릭/컬렉션/파일</a></li><li><a href='../Jf8i/Jf8i1.html'>스레드/네트워크(1:1)</a></li><li><a href='../Jf9i/Jf9i1.html'>네트워크(1:n)</a></li></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>사용자가 점수들을 입력하면 그 점수들을 정렬하는 문제입니다 이를 해결하는 다음 프로그램에 대해 빈칸을 채우세요 </pre> 				<pre class='selectable'>0점 ~ 100점 사이의 점수를 입력하세요: <b><font color='red'>90</font></b>
-0점 ~ 100점 사이의 점수를 입력하세요: <b><font color='red'>89</font></b>
-0점 ~ 100점 사이의 점수를 입력하세요: <b><font color='red'>86</font></b>
-0점 ~ 100점 사이의 점수를 입력하세요: <b><font color='red'>83</font></b>
-0점 ~ 100점 사이의 점수를 입력하세요: <b><font color='red'>80</font></b>
-80 83 86 89 90
-</pre><br><pre class='selectable'>0점 ~ 100점 사이의 점수를 입력하세요: <b><font color='red'>3</font></b>
-0점 ~ 100점 사이의 점수를 입력하세요: <b><font color='red'>4</font></b>
-0점 ~ 100점 사이의 점수를 입력하세요: <b><font color='red'>1</font></b>
-0점 ~ 100점 사이의 점수를 입력하세요: <b><font color='red'>2</font></b>
-0점 ~ 100점 사이의 점수를 입력하세요: <b><font color='red'>5</font></b>
-1 2 3 4 5
-</pre><br><pre class='selectable'>0점 ~ 100점 사이의 점수를 입력하세요: <b><font color='red'>70</font></b>
-0점 ~ 100점 사이의 점수를 입력하세요: <b><font color='red'>60</font></b>
-0점 ~ 100점 사이의 점수를 입력하세요: <b><font color='red'>80</font></b>
-0점 ~ 100점 사이의 점수를 입력하세요: <b><font color='red'>100</font></b>
-0점 ~ 100점 사이의 점수를 입력하세요: <b><font color='red'>90</font></b>
-60 70 80 90 100
-</pre><br>  	  				<h4>코드 빈칸 채우기</h4> 				<pre style='white-space:pre;border:1px'>import java.lang.System; 
-import java.util.Scanner; 
- 
-public class scoresort 
-{ 
-	public static void main( String[] args )  
-	{ 
-		Scanner scan = new Scanner( System.in ); 
-		int[] scores = new int[ 3 ]; 
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script type="text/javascript" src="../functions.js"></script> 		<script> 			const sP3d10 = [ [ "import","imports" ], [ "java.util.Scanner" ], [ "public" ], [ "class" ], [ "public" ], [ "static" ], [ "void" ], [ "main" ], [ "String" ], [ "Scanner" ], [ "new" ], [ "Scanner" ], [ "System.in" ], [ "System.out.print","print" ], [ "nextInt" ], [ "System.out.print","print" ], [ "nextInt" ], [ "System.out.print","print" ], [ "nextInt" ], [ "System.out.println","println" ], 							]; 		</script> 	</head> 	<body oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> JAVA 프로그래밍 </div> 			<div id = "navigationBox"><ol start=0><li><a href='../Jf0i/Jf0i0.html'>JAVA 프로그래밍 시작</a></li><li><a href='../Jf1i/Jf1i0.html'>출력</a></li><li><a href='../Jf2i/Jf2i0.html'>입력</a></li><ul><li><a href='../Jf2i/Jf2i1.html'>챗봇 대화</a></li><li><a href='../Jf2i/Jf2i2.html'>음식 주문</a></li><li><a href='../Jf2i/Jf2i3.html'>날씨 뉴스</a></li><li><a href='../Jf2i/Jf2i4.html'>바다</a></li><li><a href='../Jf2i/Jf2i5.html'>생일 축하</a></li><ul><li><a href='Jf2i5.html'>코드읽기</a></li><li><a href='Jf2i5a.html'>알고리즘</a></li><li><a href='Jf2i5k.html'>키워드</a></li><li><a href='Jf2i5b.html'>빈칸채우기</a></li><li><a href='Jf2i5s.html'>실행순서</a></li><li><a href='Jf2i5m.html'>실행상태</a></li><li><a href='./../../github_sourceCode/Chapter02/Birthday.java' target='code'>소스코드</a></li></ul></ul><li><a href='../Jf3i/Jf3i0.html'>변수</a></li><li><a href='../Jf4i/Jf4i0.html'>연산자</a></li><li><a href='../Jf5i/Jf5i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Jf6i/Jf6i0.html'>선택문(if)</a></li><li><a href='../Jf7i/Jf7i0.html'>반복문(while)</a></li><li><a href='../Jf8i/Jf8i0.html'>반복문(for)</a></li><li><a href='../Jf9i/Jf9i0.html'>배열</a></li><li><a href='../Jg0i/Jg0i0.html'>문자열/컬렉션</a></li><li><a href='../Jg1i/Jg1i0.html'>클래스/패키지</a></li><li><a href='../Jg2i/Jg2i0.html'>상속/다형성</a></li><li><a href='../Jg3i/Jg3i0.html'>GUI기초</a></li><li><a href='../Jg4i/Jg4i0.html'>GUI응용</a></li><li><a href='../Jg5i/Jg5i0.html'>예외/쓰레드</a></li><li><a href='../Jg6i/Jg6i0.html'>파일입출력</a></li><li><a href='../Jg7i/Jg7i0.html'>네트워크(1:1)</a></li><li><a href='../Jg8i/Jg8i0.html'>네트워크(1:n)</a></li><li><a href='../Jg9i/Jg9i0.html'>열거형/제네릭</a></li><li><a href='../Jh0i/Jh0i0.html'>재귀함수</a></li></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>사용자의 생년월일을 입력받아 그 결과를 출력하는 문제입니다 이를 해결하는 다음 프로그램에 대해 빈칸을 채우세요 </pre> 				<pre class='selectable'>당신이 태어난 년도를 입력하세요: <b><span style='color:rgb(255,0,0);'>1397</span></b>
+당신이 태어난 달을 입력하세요: <b><span style='color:rgb(255,0,0);'>5</span></b>
+당신이 태어난 날을 입력하세요: <b><span style='color:rgb(255,0,0);'>15</span></b>
+당신은 1397년 5월 15일에 태어났군요. 
+당신은 ♪~ 사랑받기 위해 ♪~ 태어난 사람 ♬~~ 
+</pre><br><pre class='selectable'>당신이 태어난 년도를 입력하세요: <b><span style='color:rgb(255,0,0);'>1501</span></b>
+당신이 태어난 달을 입력하세요: <b><span style='color:rgb(255,0,0);'>11</span></b>
+당신이 태어난 날을 입력하세요: <b><span style='color:rgb(255,0,0);'>25</span></b>
+당신은 1501년 11월 25일에 태어났군요. 
+당신은 ♪~ 사랑받기 위해 ♪~ 태어난 사람 ♬~~ 
+</pre><br><pre class='selectable'>당신이 태어난 년도를 입력하세요: <b><span style='color:rgb(255,0,0);'>1876</span></b>
+당신이 태어난 달을 입력하세요: <b><span style='color:rgb(255,0,0);'>8</span></b>
+당신이 태어난 날을 입력하세요: <b><span style='color:rgb(255,0,0);'>29</span></b>
+당신은 1876년 8월 29일에 태어났군요. 
+당신은 ♪~ 사랑받기 위해 ♪~ 태어난 사람 ♬~~ 
+</pre><br>  	  				<h4>코드 빈칸 채우기</h4> 				<pre style='white-space:pre;border:1px'><input id='blank0' type='text' required minlength='1' maxlength='30' size='6' onchange='sP3f6(0)'> <input id='blank1' type='text' required minlength='1' maxlength='30' size='17' onchange='sP3f6(1)'>; 
 	 
-		<input id='blank0' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(0)'>( int index = 0; index < scores.length; index  <input id='blank1' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(1)'>  )							 
-		{ 
-			System.out.print( "0점 ~ 100점 사이의 점수를 입력하세요: " ); 
-			scores[ index ] = scan.nextInt();  
-		}  
-		<input id='blank2' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(2)'> ( int max = scores.length - 1; max >= 0; max <input id='blank3' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(3)'>  )				 
-		{ 
-			<input id='blank4' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(4)'> ( int index = 0; index < max; index <input id='blank5' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(5)'>  )				 
-			{ 
-				if ( scores[ index ] > scores[ index + 1 ] ) 
-				{ 
-					int temp = scores[ index ]; 
-					<input id='blank6' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(6)'>;							 
-					<input id='blank7' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(7)'>;								 
-				} 
-			}	 
-		} 
- 
-		<input id='blank8' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(8)'> ( int index = 0; index < scores.length; index <input id='blank9' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(9)'>  )							 
-		{ 
-			System.out.println( scores[ index ] + " " ); 
-		}  
-		return; 
+<input id='blank2' type='text' required minlength='1' maxlength='30' size='6' onchange='sP3f6(2)'> <input id='blank3' type='text' required minlength='1' maxlength='30' size='5' onchange='sP3f6(3)'> Birthday 
+{ 
+	<input id='blank4' type='text' required minlength='1' maxlength='30' size='6' onchange='sP3f6(4)'> <input id='blank5' type='text' required minlength='1' maxlength='30' size='6' onchange='sP3f6(5)'> <input id='blank6' type='text' required minlength='1' maxlength='30' size='4' onchange='sP3f6(6)'> <input id='blank7' type='text' required minlength='1' maxlength='30' size='4' onchange='sP3f6(7)'>( <input id='blank8' type='text' required minlength='1' maxlength='30' size='6' onchange='sP3f6(8)'>[] args ) { 
+		<input id='blank9' type='text' required minlength='1' maxlength='30' size='7' onchange='sP3f6(9)'> scan = <input id='blank10' type='text' required minlength='1' maxlength='30' size='3' onchange='sP3f6(10)'> <input id='blank11' type='text' required minlength='1' maxlength='30' size='7' onchange='sP3f6(11)'>( <input id='blank12' type='text' required minlength='1' maxlength='30' size='9' onchange='sP3f6(12)'> ); 
+		int year  = 0; 
+		int month = 0; 
+		int day   = 0; 
+	 
+		<input id='blank13' type='text' required minlength='1' maxlength='30' size='16' onchange='sP3f6(13)'>( "당신이 태어난 년도를 입력하세요: " );				 
+		year = scan.<input id='blank14' type='text' required minlength='1' maxlength='30' size='7' onchange='sP3f6(14)'>();							 
+		<input id='blank15' type='text' required minlength='1' maxlength='30' size='16' onchange='sP3f6(15)'>( "당신이 태어난 달을 입력하세요: " );				 
+		month = scan.<input id='blank16' type='text' required minlength='1' maxlength='30' size='7' onchange='sP3f6(16)'>();							 
+		<input id='blank17' type='text' required minlength='1' maxlength='30' size='16' onchange='sP3f6(17)'>( "당신이 태어난 날을 입력하세요: " );				 
+		day = scan.<input id='blank18' type='text' required minlength='1' maxlength='30' size='7' onchange='sP3f6(18)'>();							 
+	 
+		<input id='blank19' type='text' required minlength='1' maxlength='30' size='18' onchange='sP3f6(19)'>( "당신은 " + year + "년 " + month + "월 " + day + "일에 태어났군요. 당신은 ♪~ 사랑받기 위해 ♪~ 태어난 사람 ♬~~ " ); 
+	 
 	} 
-} 	 			</pre> 			</div> 		</div> 	</body> </html> 
+} 	 			</pre> 				<br><br><br><br><br><br><br><br> &nbsp;  			</div> 		</div> 	</body> </html> 

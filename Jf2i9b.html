@@ -1,58 +1,21 @@
-<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script type="text/javascript" src="../functions.js"></script> 		<script> 			const d10 = [ [ "try" ], [ "catch" ], [ "NumberFormatException" ], [ "catch" ], [ "InputMismatchException" ], [ "catch" ], [ "ArithmeticException" ], [ "finally" ], 							]; 		</script> 	</head> 	<body oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> JAVA 프로그래밍 </div> 			<div id = "navigationBox"><ol><li><a href='../Jf1i/Jf1i1.html'>입출력/선택문</a></li><li><a href='../Jf2i/Jf2i1.html'>반복문/배열/예외</a></li><ul><li><a href='../Jf2i/Jf2i1.html'>엘리베이터</a></li><li><a href='../Jf2i/Jf2i2.html'>합계 Σ 계산</a></li><li><a href='../Jf2i/Jf2i3.html'>달력</a></li><li><a href='../Jf2i/Jf2i4.html'>삼각형 출력</a></li><li><a href='../Jf2i/Jf2i5.html'>점수 정렬</a></li><li><a href='../Jf2i/Jf2i6.html'>단어 정렬</a></li><li><a href='../Jf2i/Jf2i7.html'>KTX 기차 좌석</a></li><li><a href='../Jf2i/Jf2i8.html'>챗봇</a></li><li><a href='../Jf2i/Jf2i9.html'>숫자 예외</a></li><ul><li><a href='Jf2i9.html'>코드읽기</a></li><li><a href='Jf2i9a.html'>알고리즘</a></li><li><a href='Jf2i9k.html'>키워드</a></li><li><a href='Jf2i9b.html'>빈칸채우기</a></li><li><a href='Jf2i9s.html'>실행순서</a></li><li><a href='Jf2i9m.html'>실행상태</a></li><li><a href='https://github.com/CodeReading101/JAVA/blob/main/Chapter02/NumberException.java' target='_blank'>소스코드</a></li></ul><li><a href='../Jf2j/Jf2j0.html'>참조 예외</a></li></ul><li><a href='../Jf3i/Jf3i1.html'>클래스와 객체/패키지</a></li><li><a href='../Jf4i/Jf4i1.html'>상속 및 다형성</a></li><li><a href='../Jf5i/Jf5i1.html'>GUI 기초</a></li><li><a href='../Jf6i/Jf6i1.html'>GUI 응용</a></li><li><a href='../Jf7i/Jf7i1.html'>제네릭/컬렉션/파일</a></li><li><a href='../Jf8i/Jf8i1.html'>스레드/네트워크(1:1)</a></li><li><a href='../Jf9i/Jf9i1.html'>네트워크(1:n)</a></li></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>두 숫자를 입력받아 사칙연산을 수행하고 예외가 발생하면 이를 처리하는 문제입니다 이를 해결하는 다음 프로그램에 대해 빈칸을 채우세요 </pre> 				<pre class='selectable'>사칙연산을 위한 첫번째 숫자를 입력하세요: <b><font color='red'>a</font></b>
-숫자 형식 불일치
-예외 실습 완료
-</pre><br><pre class='selectable'>사칙연산을 위한 첫번째 숫자를 입력하세요: <b><font color='red'>2</font></b>
-사칙연산을 위한 두번째 숫자를 입력하세요: <b><font color='red'>b</font></b>
-입력 자료형 불일치
-예외 실습 완료
-</pre><br><pre class='selectable'>사칙연산을 위한 첫번째 숫자를 입력하세요: <b><font color='red'>2</font></b>
-사칙연산을 위한 두번째 숫자를 입력하세요: <b><font color='red'>0</font></b>
-2 + 0 = 2
-2 - 0 = 2
-2 * 0 = 0
-산술 연산 오류
-예외 실습 완료
-</pre><br>  	  				<h4>코드 빈칸 채우기</h4> 				<pre style='white-space:pre;border:1px'>import java.util.*; 
- 
-public class NumberException 
-{   
-	public static void main(String args[])  
-	{  
- 
-		<input id='blank0' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(0)'> 											 
-		{ 
-			Scanner scan = new Scanner( System.in ); 
-			System.out.print( "사칙연산을 위한 첫번째 숫자를 입력하세요: " ); 
-			int num1 =  
-			          Integer.parseInt(				  
-				                             scan.nextLine() );  
-			System.out.print( "사칙연산을 위한 두번째 숫자를 입력하세요: " ); 
-			int num2 = 
-				   scan.nextInt(); 
-			 
-			System.out.println( num1 + " + " + num2 + " = " + ( num1 + num2 ) ); 
-			System.out.println( num1 + " - " + num2 + " = " + ( num1 - num2 ) ); 
-			System.out.println( num1 + " * " + num2 + " = " + ( num1 * num2 ) ); 
-			System.out.println( num1 + " / " + num2 + " = " + ( num1 / num2 ) ); 
-		}	 
-		<input id='blank1' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(1)'> ( <input id='blank2' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(2)'> e )				 
-		{ 
-			System.out.println("숫자 형식 불일치"); 
-		} 
-		<input id='blank3' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(3)'> ( <input id='blank4' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(4)'> e ) 				 
-		{ 
-	 		System.out.println( "입력 자료형 불일치" ); 
-		} 
-		<input id='blank5' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(5)'> ( <input id='blank6' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(6)'> e ) 				 
-		{ 
-			System.out.println( "산술 연산 오류" ); 
-		}  
-		<input id='blank7' type='text' required minlength='1' maxlength='30' size='10' onchange='f6(7)'> 										 
-		{ 
-			System.out.println( "예외 실습 완료" ); 
-		}  
-		 
-		 
-		return; 
-	}  
-} 	 			</pre> 			</div> 		</div> 	</body> </html> 
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script type="text/javascript" src="../functions.js"></script> 		<script> 			const sP3d10 = [ [ "import","imports" ], [ "java.util.Scanner" ], [ "public" ], [ "class" ], [ "public" ], [ "static" ], [ "void" ], [ "main" ], [ "String" ], [ "args" ], [ "Scanner" ], [ "new" ], [ "Scanner" ], [ "System.in" ], [ "System.out.print","print" ], [ "nextLine" ], [ "charAt" ], [ "System.out.println","println" ], 							]; 		</script> 	</head> 	<body oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> JAVA 프로그래밍 </div> 			<div id = "navigationBox"><ol start=0><li><a href='../Jf0i/Jf0i0.html'>JAVA 프로그래밍 시작</a></li><li><a href='../Jf1i/Jf1i0.html'>출력</a></li><li><a href='../Jf2i/Jf2i0.html'>입력</a></li><ul><li><a href='../Jf2i/Jf2i1.html'>챗봇 대화</a></li><li><a href='../Jf2i/Jf2i2.html'>음식 주문</a></li><li><a href='../Jf2i/Jf2i3.html'>날씨 뉴스</a></li><li><a href='../Jf2i/Jf2i4.html'>바다</a></li><li><a href='../Jf2i/Jf2i5.html'>생일 축하</a></li><li><a href='../Jf2i/Jf2i7.html'>캐릭터 한 칸 이동</a></li><li><a href='../Jf2i/Jf2i8.html'>점수 입출력</a></li><li><a href='../Jf2i/Jf2i9.html'>알파벳 입출력</a></li><ul><li><a href='Jf2i9.html'>코드읽기</a></li><li><a href='Jf2i9a.html'>알고리즘</a></li><li><a href='Jf2i9k.html'>키워드</a></li><li><a href='Jf2i9b.html'>빈칸채우기</a></li><li><a href='Jf2i9s.html'>실행순서</a></li><li><a href='Jf2i9m.html'>실행상태</a></li><li><a href='./../../github_sourceCode/Chapter02/Alphabet.java' target='code'>소스코드</a></li></ul></ul><li><a href='../Jf3i/Jf3i0.html'>변수</a></li><li><a href='../Jf4i/Jf4i0.html'>연산자</a></li><li><a href='../Jf5i/Jf5i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Jf6i/Jf6i0.html'>선택문(if)</a></li><li><a href='../Jf7i/Jf7i0.html'>반복문(while)</a></li><li><a href='../Jf8i/Jf8i0.html'>반복문(for)</a></li><li><a href='../Jf9i/Jf9i0.html'>배열</a></li><li><a href='../Jg0i/Jg0i0.html'>문자열/컬렉션</a></li><li><a href='../Jg1i/Jg1i0.html'>클래스/패키지</a></li><li><a href='../Jg2i/Jg2i0.html'>상속/다형성</a></li><li><a href='../Jg3i/Jg3i0.html'>GUI기초</a></li><li><a href='../Jg4i/Jg4i0.html'>GUI응용</a></li><li><a href='../Jg5i/Jg5i0.html'>예외/쓰레드</a></li><li><a href='../Jg6i/Jg6i0.html'>파일입출력</a></li><li><a href='../Jg7i/Jg7i0.html'>네트워크(1:1)</a></li><li><a href='../Jg8i/Jg8i0.html'>네트워크(1:n)</a></li><li><a href='../Jg9i/Jg9i0.html'>열거형/제네릭</a></li><li><a href='../Jh0i/Jh0i0.html'>재귀함수</a></li></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>알파벳을 입력받아 그 값을 출력하는 문제입니다 이를 해결하는 다음 프로그램에 대해 빈칸을 채우세요 </pre> 				<pre class='selectable'>알파벳 한 글자를 입력하세요: <b><span style='color:rgb(255,0,0);'>k</span></b>
+k를 입력했군요^^ 
+</pre><br><pre class='selectable'>알파벳 한 글자를 입력하세요: <b><span style='color:rgb(255,0,0);'>j</span></b>
+j를 입력했군요^^ 
+</pre><br><pre class='selectable'>알파벳 한 글자를 입력하세요: <b><span style='color:rgb(255,0,0);'>A</span></b>
+A를 입력했군요^^ 
+</pre><br>  	  				<h4>코드 빈칸 채우기</h4> 				<pre style='white-space:pre;border:1px'><input id='blank0' type='text' required minlength='1' maxlength='30' size='6' onchange='sP3f6(0)'> <input id='blank1' type='text' required minlength='1' maxlength='30' size='17' onchange='sP3f6(1)'>; 
+	 
+<input id='blank2' type='text' required minlength='1' maxlength='30' size='6' onchange='sP3f6(2)'> <input id='blank3' type='text' required minlength='1' maxlength='30' size='5' onchange='sP3f6(3)'> Main 
+{ 
+	<input id='blank4' type='text' required minlength='1' maxlength='30' size='6' onchange='sP3f6(4)'> <input id='blank5' type='text' required minlength='1' maxlength='30' size='6' onchange='sP3f6(5)'> <input id='blank6' type='text' required minlength='1' maxlength='30' size='4' onchange='sP3f6(6)'> <input id='blank7' type='text' required minlength='1' maxlength='30' size='4' onchange='sP3f6(7)'>( <input id='blank8' type='text' required minlength='1' maxlength='30' size='6' onchange='sP3f6(8)'>[] <input id='blank9' type='text' required minlength='1' maxlength='30' size='4' onchange='sP3f6(9)'> ) { 
+		<input id='blank10' type='text' required minlength='1' maxlength='30' size='7' onchange='sP3f6(10)'> scan = <input id='blank11' type='text' required minlength='1' maxlength='30' size='3' onchange='sP3f6(11)'> <input id='blank12' type='text' required minlength='1' maxlength='30' size='7' onchange='sP3f6(12)'>( <input id='blank13' type='text' required minlength='1' maxlength='30' size='9' onchange='sP3f6(13)'> ); 
+		char letter = '\0'; 
+	 
+		<input id='blank14' type='text' required minlength='1' maxlength='30' size='16' onchange='sP3f6(14)'>( "알파벳 한 글자를 입력하세요: " );	 
+		letter = scan.<input id='blank15' type='text' required minlength='1' maxlength='30' size='8' onchange='sP3f6(15)'>().<input id='blank16' type='text' required minlength='1' maxlength='30' size='6' onchange='sP3f6(16)'>(0);				 
+	 
+		<input id='blank17' type='text' required minlength='1' maxlength='30' size='18' onchange='sP3f6(17)'>( letter + "를 입력했군요^^" ); 
+	 
+	} 
+} 	 			</pre> 				<br><br><br><br><br><br><br><br> &nbsp;  			</div> 		</div> 	</body> </html> 
