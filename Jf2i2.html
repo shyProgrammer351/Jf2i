@@ -17,48 +17,48 @@
 메인요리는 야채샐러드, 소스는 키위드레싱, 음료는 커피를 선택하셨습니다.
 준비하겠습니다. 잠시만 기다려 주십시오. 
 </pre><br> 	  				<h4>알고리즘</h4> 				<pre style='white-space:normal;'>프로그램 시작 <br>&nbsp; &nbsp;손님에게 주문 받기 <br>&nbsp; &nbsp;&nbsp; &nbsp;메인요리 주문 받기 <br>&nbsp; &nbsp;&nbsp; &nbsp;소스 주문 받기 <br>&nbsp; &nbsp;&nbsp; &nbsp;음료 주문 받기 <br>&nbsp; &nbsp;주문 내역 확인 <br>프로그램 종료 <br></pre> 		 				<br><h4>프로그램 코드 <input id='btn' type='button' value='실행순서 및 메모리상태 확인' onclick='sP3f5();'/></h4>  				<div id = "codeBox"><pre id="code0" class="unselectable codeClass">	<font color="green">// 파일명 : ./Chapter02/FoodOrder.java</font>
-</pre><pre id="code0" class="unselectable codeClass">	<a href='../Jf1i/Jf1i0.html'>import</a> <a href='../Jf2i/Jf2i0.html'>java.util.Scanner</a>;
+</pre><pre id="code0" class="unselectable codeClass">	<a href='../Jf1i/Jf1i0.html' target='keyword'>import</a> <a href='../Jf2i/Jf2i0.html' target='keyword'>java.util.Scanner</a>;
 </pre><pre id="code0" class="unselectable codeClass">		 
-</pre><pre id="code0" class="unselectable codeClass">	<a href='../Jf1i/Jf1i0.html'>public</a> <a href='../Jf1i/Jf1i0.html'>class</a> FoodOrder
+</pre><pre id="code0" class="unselectable codeClass">	<a href='../Jf1i/Jf1i0.html' target='keyword'>public</a> <a href='../Jf1i/Jf1i0.html' target='keyword'>class</a> FoodOrder
 </pre><pre id="code0" class="unselectable codeClass">	{
 </pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 프로그램 시작 </b></font>
 </pre>
-<pre id="code1" class="unselectable codeClass">1		<a href='../Jf1i/Jf1i0.html'>public</a> <a href='../Jf1i/Jf1i0.html'>static</a> <a href='../Jf1i/Jf1i0.html'>void</a> <a href='../Jf1i/Jf1i0.html'>main</a>( <a href='../Jf1i/Jf1i0.html'>String</a>[] args ) {
+<pre id="code1" class="unselectable codeClass">1		<a href='../Jf1i/Jf1i0.html' target='keyword'>public</a> <a href='../Jf1i/Jf1i0.html' target='keyword'>static</a> <a href='../Jf1i/Jf1i0.html' target='keyword'>void</a> <a href='../Jf1i/Jf1i0.html' target='keyword'>main</a>( <a href='../Jf1i/Jf1i0.html' target='keyword'>String</a>[] args ) {
 </pre><pre id="code0" class="unselectable codeClass">			<font color="green">// 변수 초기화</font>
-</pre><pre id="code0" class="unselectable codeClass">			<a href='../Jf2i/Jf2i0.html'>Scanner</a> scan = <a href='../Jf2i/Jf2i0.html'>new</a> <a href='../Jf2i/Jf2i0.html'>Scanner</a>( <a href='../Jf2i/Jf2i0.html'>System.in</a> );
+</pre><pre id="code0" class="unselectable codeClass">			<a href='../Jf2i/Jf2i0.html' target='keyword'>Scanner</a> scan = <a href='../Jf2i/Jf2i0.html' target='keyword'>new</a> <a href='../Jf2i/Jf2i0.html' target='keyword'>Scanner</a>( <a href='../Jf2i/Jf2i0.html' target='keyword'>System.in</a> );
 </pre>
-<pre id="code2" class="unselectable codeClass">2			<a href='../Jf1i/Jf1i0.html'>String</a> mainDish = "", sauce = "", drink = "";
+<pre id="code2" class="unselectable codeClass">2			<a href='../Jf1i/Jf1i0.html' target='keyword'>String</a> mainDish = "", sauce = "", drink = "";
 </pre><pre id="code0" class="unselectable codeClass">		 
 </pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 손님에게 주문 받기 </b></font>
 </pre>
-<pre id="code3" class="unselectable codeClass">3			<a href='../Jf1i/Jf1i0.html'>System.out.println</a>( "주문 도와드리겠습니다, 손님." );
+<pre id="code3" class="unselectable codeClass">3			<a href='../Jf1i/Jf1i0.html' target='keyword'>System.out.println</a>( "주문 도와드리겠습니다, 손님." );
 </pre><pre id="code0" class="unselectable codeClass">		 
 </pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 메인요리 주문 받기 </b></font>
 </pre>
-<pre id="code4" class="unselectable codeClass">4			<a href='../Jf1i/Jf1i0.html'>System.out.print</a>( "메인요리는 고르셨습니까: " );
+<pre id="code4" class="unselectable codeClass">4			<a href='../Jf1i/Jf1i0.html' target='keyword'>System.out.print</a>( "메인요리는 고르셨습니까: " );
 </pre>
-<pre id="code5" class="unselectable codeClass">5			mainDish = scan.<a href='../Jf2i/Jf2i0.html'>nextLine</a>().trim();
+<pre id="code5" class="unselectable codeClass">5			mainDish = scan.<a href='../Jf2i/Jf2i0.html' target='keyword'>nextLine</a>().trim();
 </pre><pre id="code0" class="unselectable codeClass">		 
 </pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 소스 주문 받기 </b></font>
 </pre>
-<pre id="code6" class="unselectable codeClass">6			<a href='../Jf1i/Jf1i0.html'>System.out.print</a>( "소스는 어떻게 할까요: " );
+<pre id="code6" class="unselectable codeClass">6			<a href='../Jf1i/Jf1i0.html' target='keyword'>System.out.print</a>( "소스는 어떻게 할까요: " );
 </pre>
-<pre id="code7" class="unselectable codeClass">7			sauce = scan.<a href='../Jf2i/Jf2i0.html'>nextLine</a>().trim();
+<pre id="code7" class="unselectable codeClass">7			sauce = scan.<a href='../Jf2i/Jf2i0.html' target='keyword'>nextLine</a>().trim();
 </pre><pre id="code0" class="unselectable codeClass">		 
 </pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 음료 주문 받기 </b></font>
 </pre>
-<pre id="code8" class="unselectable codeClass">8			<a href='../Jf1i/Jf1i0.html'>System.out.print</a>( "음료는 무엇으로 준비할까요: " );
+<pre id="code8" class="unselectable codeClass">8			<a href='../Jf1i/Jf1i0.html' target='keyword'>System.out.print</a>( "음료는 무엇으로 준비할까요: " );
 </pre>
-<pre id="code9" class="unselectable codeClass">9			drink = scan.<a href='../Jf2i/Jf2i0.html'>nextLine</a>().trim();
+<pre id="code9" class="unselectable codeClass">9			drink = scan.<a href='../Jf2i/Jf2i0.html' target='keyword'>nextLine</a>().trim();
 </pre><pre id="code0" class="unselectable codeClass">		 
 </pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 주문 내역 확인 </b></font>
 </pre>
-<pre id="code10" class="unselectable codeClass">10			<a href='../Jf1i/Jf1i0.html'>System.out.println</a>( "메인요리는 " + mainDish + ", 소스는 " + sauce + ", 음료는 " + drink + "를 선택하셨습니다. " );
+<pre id="code10" class="unselectable codeClass">10			<a href='../Jf1i/Jf1i0.html' target='keyword'>System.out.println</a>( "메인요리는 " + mainDish + ", 소스는 " + sauce + ", 음료는 " + drink + "를 선택하셨습니다. " );
 </pre>
-<pre id="code11" class="unselectable codeClass">11			<a href='../Jf1i/Jf1i0.html'>System.out.println</a>( "준비하겠습니다. 잠시만 기다려 주십시오." );
+<pre id="code11" class="unselectable codeClass">11			<a href='../Jf1i/Jf1i0.html' target='keyword'>System.out.println</a>( "준비하겠습니다. 잠시만 기다려 주십시오." );
 </pre><pre id="code0" class="unselectable codeClass">		 
 </pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 프로그램 종료 </b></font>
 </pre>
 <pre id="code12" class="unselectable codeClass">12		}
 </pre><pre id="code0" class="unselectable codeClass">	}
-</pre></div>	 	 				<br><h4>실행 순서</h4> 				<pre id = "sP3d4" style='white-space:normal; width:800px;'> </pre> 				<pre style='white-space:normal;'> 					※ 실행순서 및 메모리상태는 A키(이전) 및 D키(다음)를 눌러도 확인할 수 있습니다  				</pre> 				<br><br><br><br><br><br><br><br> &nbsp;  			</div> 			<div id = "floatingBox" style = "top:120px;left:900px;margin:0px;padding:0px;"> 				<pre id = "outputBox" class ="outputBox" style = "color:White;height:110px;width:708px;padding:10px;margin:0px;"></pre>  				<div id = "intermediateResult"> 					<img id = "sP3d7"> 					<table style = "border-spacing:0px;margin:0px;table-layout:auto;"> 						<tbody id = "sP3d8"></tbody> 					</table> 				</div> 			</div> 		</div> 	</body> </html> 
+</pre></div>	 	 				<br><h4>실행 순서</h4> 				<pre id = "sP3d4" style='white-space:normal; width:800px;'> </pre> 				<pre style='white-space:normal;'> 					※ 실행순서 및 메모리상태는 A키(이전) 및 D키(다음)를 눌러도 확인할 수 있습니다  				</pre> 				<br><br><br><br><br><br><br><br> &nbsp;  			</div> 			<div id = "floatingBox" style = "top:200px;left:900px;margin:0px;padding:0px;"> 				<pre id = "outputBox" class ="outputBox" style = "color:White;height:110px;width:708px;padding:10px;margin:0px;"></pre>  				<div id = "intermediateResult"> 					<img id = "sP3d7"> 					<table style = "border-spacing:0px;margin:0px;table-layout:auto;"> 						<tbody id = "sP3d8"></tbody> 					</table> 				</div> 			</div> 		</div> 	</body> </html> 
